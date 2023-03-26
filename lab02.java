@@ -12,6 +12,7 @@ public class lab02 {
         Scanner input = new Scanner(System.in);
         return input.nextFloat();
     }
+    /*  Napisz program obliczający wyróżnik delta i pierwiastki trójmianu kwadratowego. */
     public static void Delta() {
         System.out.println("---------- ZADANIE 1 ----------");
         System.out.print("podaj liczbe a : ");
@@ -42,6 +43,11 @@ public class lab02 {
             System.out.println("podane dane nie spelniaja warunku trojmianu kwadratowego (a musi byc rozne od 0!!)");
         }
     }
+    /*  Napisz kalkulator obliczający: sumę, różnicę, iloczyn, iloraz, potęgę, pierwiastek, oraz wartości 
+funkcji trygonometrycznych dla zadanego kąta. Użyj biblioteki Math np. Math.Sin(2.5). Proszę 
+pamiętać, że wartości kąta podawane do funkcji mierzone są miarą łukową. Wyniki działania 
+algorytmów wyświetlaj na konsoli. Do obsługi menu proszę użyć konstrukcji switch-case oraz pętli 
+while.*/
     public static void kalkulator() {
         System.out.println("--------- ZADANIE 2 ----------");
         menu();
@@ -421,6 +427,8 @@ Wyniki działania algorytmów wyświetlaj na konsoli. Utwórz odpowiednie menu.*
         }
         System.out.print("maksymalna wartosc tablicy wynosi: " + maxi_value + "\n");
     }
+    /*  Napisz program wyświetlający liczby od 20-0, z wyłączeniem liczb {2,6,9,15,19}. Do realizacji 
+zadania wyłączenia użyj instrukcji continue */
     public static void wylaczenie(){
         System.out.println("---------- ZADANIE 5 ----------");
         for(int i = 20; i>=0; i--){
@@ -430,6 +438,9 @@ Wyniki działania algorytmów wyświetlaj na konsoli. Utwórz odpowiednie menu.*
             System.out.println(i);
         }
     }
+    /* Napisz program, który w nieskończoność pyta użytkownika o liczby całkowite. Pętla nieskończona 
+powinna się zakończyć gdy użytkownik wprowadzi liczbę mniejszą od zera. Do opuszczenia pętli 
+nieskończonej użyj instrukcji break */
     public static void calkowite(){
         System.out.println("---------- ZADANIE 6 ----------");
         while(true){
@@ -438,4 +449,6 @@ Wyniki działania algorytmów wyświetlaj na konsoli. Utwórz odpowiednie menu.*
             if(c<0) break;
         }
     }
+    /* . Napisz program umożliwiający wprowadzanie n liczb oraz sortujący te liczby metodą bąbelkową 
+lub wstawiania. Wyniki wyświetlaj na konsoli.*/
 }
