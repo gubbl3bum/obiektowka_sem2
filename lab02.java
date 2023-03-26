@@ -46,10 +46,10 @@ public class lab02 {
         }
     }
     /*  Napisz kalkulator obliczający: sumę, różnicę, iloczyn, iloraz, potęgę, pierwiastek, oraz wartości
-funkcji trygonometrycznych dla zadanego kąta. Użyj biblioteki Math np. Math.Sin(2.5). Proszę
-pamiętać, że wartości kąta podawane do funkcji mierzone są miarą łukową. Wyniki działania
-algorytmów wyświetlaj na konsoli. Do obsługi menu proszę użyć konstrukcji switch-case oraz pętli
-while.*/
+    funkcji trygonometrycznych dla zadanego kąta. Użyj biblioteki Math np. Math.Sin(2.5). Proszę
+    pamiętać, że wartości kąta podawane do funkcji mierzone są miarą łukową. Wyniki działania
+    algorytmów wyświetlaj na konsoli. Do obsługi menu proszę użyć konstrukcji switch-case oraz pętli
+    while.*/
     public static void kalkulator() {
         System.out.println("\n--------- ZADANIE 2 ----------");
         menu();
@@ -271,14 +271,14 @@ while.*/
         System.out.format("wartosci funkcji to: sin -> %.2f  cosin -> %.2f tang ->  %.2f cotang -> %.2f", f_sin(rad), f_cos(rad), f_tan(rad), f_cot(rad));
     }
     /* Napisz program umożliwiający wprowadzanie 10-ciu liczb rzeczywistych do tablicy. Następnie
-utwórz następujące funkcjonalności używając pętli for:
-• Wyświetlanie tablicy od pierwszego do ostatniego indeksu.
-• Wyświetlanie tablicy od ostatniego do pierwszego indeksu.
-• Wyświetlanie elementów o nieparzystych indeksach.
-• Wyświetlanie elementów o parzystych indeksach.
-Wyniki działania algorytmów wyświetlaj na konsoli. Dla wyboru powyższych funkcjonalności
-programu utwórz odpowiednie menu. Do obsługi menu użyć rozbudowanej konstrukcji else-if oraz pętli
-do-while*/
+    utwórz następujące funkcjonalności używając pętli for:
+        • Wyświetlanie tablicy od pierwszego do ostatniego indeksu.
+        • Wyświetlanie tablicy od ostatniego do pierwszego indeksu.
+        • Wyświetlanie elementów o nieparzystych indeksach.
+        • Wyświetlanie elementów o parzystych indeksach.
+    Wyniki działania algorytmów wyświetlaj na konsoli. Dla wyboru powyższych funkcjonalności
+    programu utwórz odpowiednie menu. Do obsługi menu użyć rozbudowanej konstrukcji else-if oraz pętli
+    do-while*/
     public static void tablice(){
         System.out.println("\n---------- ZADANIE 3 ----------");
         menu1();
@@ -348,13 +348,13 @@ do-while*/
         }
     }
     /*. Napisz program umożliwiający wprowadzanie 10-ciu liczb. Dla wprowadzonych liczb wykonaj
-odpowiednie algorytmy:
-• oblicz sumę elementów tablicy,
-• oblicz iloczyn elementów tablicy,
-• wyznacz wartość średnią,
-• wyznacz wartość minimalną,
-• wyznacz wartość maksymalną.
-Wyniki działania algorytmów wyświetlaj na konsoli. Utwórz odpowiednie menu.*/
+    odpowiednie algorytmy:
+        • oblicz sumę elementów tablicy,
+        • oblicz iloczyn elementów tablicy,
+        • wyznacz wartość średnią,
+        • wyznacz wartość minimalną,
+        • wyznacz wartość maksymalną.
+    Wyniki działania algorytmów wyświetlaj na konsoli. Utwórz odpowiednie menu.*/
     public static void alg(){
         System.out.println("\n---------- ZADANIE 4 ---------");
         float[] tab = array_input();
@@ -430,7 +430,7 @@ Wyniki działania algorytmów wyświetlaj na konsoli. Utwórz odpowiednie menu.*
         System.out.print("maksymalna wartosc tablicy wynosi: " + maxi_value + "\n");
     }
     /*  Napisz program wyświetlający liczby od 20-0, z wyłączeniem liczb {2,6,9,15,19}. Do realizacji
-zadania wyłączenia użyj instrukcji continue */
+    zadania wyłączenia użyj instrukcji continue */
     public static void wylaczenie(){
         System.out.println("\n---------- ZADANIE 5 ----------");
         for(int i = 20; i>=0; i--){
@@ -441,8 +441,8 @@ zadania wyłączenia użyj instrukcji continue */
         }
     }
     /* Napisz program, który w nieskończoność pyta użytkownika o liczby całkowite. Pętla nieskończona
-powinna się zakończyć gdy użytkownik wprowadzi liczbę mniejszą od zera. Do opuszczenia pętli
-nieskończonej użyj instrukcji break */
+    powinna się zakończyć gdy użytkownik wprowadzi liczbę mniejszą od zera. Do opuszczenia pętli
+    nieskończonej użyj instrukcji break */
     public static void calkowite(){
         System.out.println("\n---------- ZADANIE 6 ----------");
         while(true){
@@ -452,7 +452,7 @@ nieskończonej użyj instrukcji break */
         }
     }
     /* . Napisz program umożliwiający wprowadzanie n liczb oraz sortujący te liczby metodą bąbelkową
-lub wstawiania. Wyniki wyświetlaj na konsoli.*/
+    lub wstawiania. Wyniki wyświetlaj na konsoli.*/
     public static float[] arr_inp_n(){
         System.out.print("podaj ilosc elementow: ");
         int arr_len = (int) inputFloat();
