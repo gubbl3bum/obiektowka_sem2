@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 public class lab02 {
     public static void main(String[] args) {
@@ -7,11 +8,13 @@ public class lab02 {
         alg();
         wylaczenie();
         calkowite();
+        bubble_sort();
     }
     public static float inputFloat() {
         Scanner input = new Scanner(System.in);
         return input.nextFloat();
     }
+    /*  Napisz program obliczający wyróżnik delta i pierwiastki trójmianu kwadratowego. */
     public static void Delta() {
         System.out.println("---------- ZADANIE 1 ----------");
         System.out.print("podaj liczbe a : ");
@@ -42,8 +45,13 @@ public class lab02 {
             System.out.println("podane dane nie spelniaja warunku trojmianu kwadratowego (a musi byc rozne od 0!!)");
         }
     }
+    /*  Napisz kalkulator obliczający: sumę, różnicę, iloczyn, iloraz, potęgę, pierwiastek, oraz wartości
+funkcji trygonometrycznych dla zadanego kąta. Użyj biblioteki Math np. Math.Sin(2.5). Proszę
+pamiętać, że wartości kąta podawane do funkcji mierzone są miarą łukową. Wyniki działania
+algorytmów wyświetlaj na konsoli. Do obsługi menu proszę użyć konstrukcji switch-case oraz pętli
+while.*/
     public static void kalkulator() {
-        System.out.println("--------- ZADANIE 2 ----------");
+        System.out.println("\n--------- ZADANIE 2 ----------");
         menu();
     }
     public static void menu() {
@@ -92,8 +100,8 @@ public class lab02 {
         if(rad == 0) {
             return 0;
         }else{
-        double cotangens= 1/Math.tan(rad);
-        return cotangens;}
+            double cotangens= 1/Math.tan(rad);
+            return cotangens;}
     }
     public static boolean Run(){
         System.out.println();
@@ -195,29 +203,29 @@ public class lab02 {
         double ilor = 0;
         switch(Functions()) {
             case 12: ilor = f_sin(rad) / (f_cos(rad));
-                    break;
+                break;
             case 13: if(f_tan(rad) != 0) ilor = f_sin(rad) / (f_tan(rad));
-                    break;
+                break;
             case 14: if(f_cot(rad) != 0) ilor = f_sin(rad) / (f_cot(rad));
-                    break;
+                break;
             case 21: ilor = f_cos(rad) / (f_sin(rad));
-                    break;
+                break;
             case 23: if(f_tan(rad)!=0) ilor = f_cos(rad) / (f_tan(rad));
-                    break;
+                break;
             case 24: if(f_cot(rad)!=0) ilor = f_cos(rad) / (f_cot(rad));
-                    break;
+                break;
             case 31: ilor = f_tan(rad) / (f_sin(rad));
-                    break;
+                break;
             case 32: ilor = f_tan(rad) / (f_cos(rad));
-                    break;
+                break;
             case 34: if(f_cot(rad)!=0)ilor = f_tan(rad) / (f_cos(rad));
-                    break;
+                break;
             case 41: ilor = f_cot(rad) / (f_sin(rad));
-                    break;
+                break;
             case 42: ilor = f_cot(rad) / (f_cos(rad));
-                    break;
+                break;
             case 43: if(f_tan(rad)!=0)ilor = f_cot(rad) / (f_tan(rad));
-                    break;
+                break;
             default: //ilor = 0;
         }
         System.out.print("iloraz funkcji trygonometrycznych wynosi: "+ ilor);
@@ -227,17 +235,17 @@ public class lab02 {
         double pow, function;
         switch(Functions1()) {
             case 1: function = f_sin(rad);
-                    pow = Math.pow(2, function);
-                    break;
+                pow = Math.pow(2, function);
+                break;
             case 2: function = f_cos(rad);
-                    pow = Math.pow(2, function);
-                    break;
+                pow = Math.pow(2, function);
+                break;
             case 3: function = f_tan(rad);
-                    pow = Math.pow(2, function);
-                    break;
+                pow = Math.pow(2, function);
+                break;
             case 4: function = f_cot(rad);
-                    pow = Math.pow(2, function);
-                    break;
+                pow = Math.pow(2, function);
+                break;
             default: pow = 0;
         }
         System.out.print("potegowanie funkcji trygonometrycznej wynosi: " + pow);
@@ -247,13 +255,13 @@ public class lab02 {
         double pierw = 0;
         switch(Functions1()){
             case 1: pierw = Math.sqrt(f_sin(rad));
-                    break;
+                break;
             case 2: pierw = Math.sqrt(f_cos(rad));
-                    break;
+                break;
             case 3: pierw = Math.sqrt(f_tan(rad));
-                    break;
+                break;
             case 4: pierw = Math.sqrt(f_cot(rad));
-                    break;
+                break;
             default: ;
         }
         System.out.print("pierwiastek funkcji trygonometrycznej wynosi: " + pierw);
@@ -272,7 +280,7 @@ Wyniki działania algorytmów wyświetlaj na konsoli. Dla wyboru powyższych fun
 programu utwórz odpowiednie menu. Do obsługi menu użyć rozbudowanej konstrukcji else-if oraz pętli
 do-while*/
     public static void tablice(){
-        System.out.println("---------- ZADANIE 3 ----------");
+        System.out.println("\n---------- ZADANIE 3 ----------");
         menu1();
     }
     public static float[] array_input(){
@@ -289,7 +297,7 @@ do-while*/
         float choice = 0;
         do{
             System.out.println("---------- MENU ----------");
-            System.out.println("\n\n1. wyswietlanie tablicy od pierwszego do ostatniego indeksu");
+            System.out.println("\n1. wyswietlanie tablicy od pierwszego do ostatniego indeksu");
             System.out.println("2. wyswietlanie tablicy od ostatniego do pierwszego indeksu");
             System.out.println("3. wyswietlanie elementow o nieparzystych indeksach");
             System.out.println("4. wyswietlanie elementow o parzystych elementach");
@@ -348,7 +356,7 @@ odpowiednie algorytmy:
 • wyznacz wartość maksymalną.
 Wyniki działania algorytmów wyświetlaj na konsoli. Utwórz odpowiednie menu.*/
     public static void alg(){
-        System.out.println("---------- ZADANIE 4 ---------");
+        System.out.println("\n---------- ZADANIE 4 ---------");
         float[] tab = array_input();
         menu_4(tab);
     }
@@ -365,15 +373,15 @@ Wyniki działania algorytmów wyświetlaj na konsoli. Utwórz odpowiednie menu.*
             System.out.println("wybrana opcja: ");
             choice = inputFloat();
             if(choice == 1){
-               sum(tab);}
+                sum(tab);}
             else if(choice == 2) {
-               product(tab);}
+                product(tab);}
             else if(choice == 3){
-              av_value(tab);}
+                av_value(tab);}
             else if(choice == 4){
-              min_value(tab);}
+                min_value(tab);}
             else if(choice == 5){
-              max_value(tab);}
+                max_value(tab);}
             else if(choice == 6){
                 System.out.println("wybrano wyjscie z programu");}
             else {
@@ -421,8 +429,10 @@ Wyniki działania algorytmów wyświetlaj na konsoli. Utwórz odpowiednie menu.*
         }
         System.out.print("maksymalna wartosc tablicy wynosi: " + maxi_value + "\n");
     }
+    /*  Napisz program wyświetlający liczby od 20-0, z wyłączeniem liczb {2,6,9,15,19}. Do realizacji
+zadania wyłączenia użyj instrukcji continue */
     public static void wylaczenie(){
-        System.out.println("---------- ZADANIE 5 ----------");
+        System.out.println("\n---------- ZADANIE 5 ----------");
         for(int i = 20; i>=0; i--){
             if (i==2 || i==6 || i==9 || i==15 || i==19){
                 continue;
@@ -430,12 +440,40 @@ Wyniki działania algorytmów wyświetlaj na konsoli. Utwórz odpowiednie menu.*
             System.out.println(i);
         }
     }
+    /* Napisz program, który w nieskończoność pyta użytkownika o liczby całkowite. Pętla nieskończona
+powinna się zakończyć gdy użytkownik wprowadzi liczbę mniejszą od zera. Do opuszczenia pętli
+nieskończonej użyj instrukcji break */
     public static void calkowite(){
-        System.out.println("---------- ZADANIE 6 ----------");
+        System.out.println("\n---------- ZADANIE 6 ----------");
         while(true){
             System.out.print("podaj liczbe calkowita: ");
             float c  = inputFloat();
             if(c<0) break;
         }
+    }
+    /* . Napisz program umożliwiający wprowadzanie n liczb oraz sortujący te liczby metodą bąbelkową
+lub wstawiania. Wyniki wyświetlaj na konsoli.*/
+    public static float[] arr_inp_n(){
+        System.out.print("podaj ilosc elementow: ");
+        int arr_len = (int) inputFloat();
+        float[] arr = new float[arr_len];
+        for(int i = 0; i < arr.length; i++){
+            System.out.print("podaj " + i + " element: ");
+            arr[i] = inputFloat();
+        }
+        return arr;
+    }
+    public static void bubble_sort(){
+        System.out.println("\n---------- ZADANIE 7 -----------");
+        float[] arr = arr_inp_n();
+        for (int i = 0; i < arr.length-1; i++){
+            for (int j = 0; j < arr.length-i-1; j++){
+                if (arr[j] > arr[j+1]) {
+                    float temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;}
+            }
+        }
+        System.out.println("wynik dzialania: " + Arrays.toString(arr));
     }
 }
