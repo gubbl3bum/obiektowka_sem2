@@ -1,14 +1,16 @@
 package lab05;
 public class Cube {
         double a, vol, area;
-
-        public void VolumeCu(){
-                vol = Math.pow(3, a);
+        public void setA(double b) {
+                this.a = b;
         }
-        public void AreaCu(){
-                area = 6 * (Math.pow(2,a));
+        public void Volume_cube(){
+                vol = a * a * a;
+        }
+        public void Area_cube(){
+                area = 6 * (a * a);
         }
         public void WriteOutCu(){
-                System.out.println("----------CUBE----------\narea: " + area + " volume: " + vol);
+                System.out.println("area: " + area + " volume: " + vol + "\n");
         }
         }

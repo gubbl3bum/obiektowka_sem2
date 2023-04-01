@@ -1,22 +1,20 @@
 package lab05;
 public class Rectangle {
     double a,b,area, circut;
-    public void setA(double a) {
-        this.a = a;
+    public void setA_rec(double c) {
+        this.a = c;
     }
-    public void setB(double b) {
-        this.b = b;
+    public void setB_rec(double c) {
+        this.b = c;
     }
-    public double AreaR(){
+    public void Area_rec(){
         area = a * b;
-        return area;
     }
     //obwod
-    public double CircutR(){
+    public void Circut_rec(){
         circut = (2*a)+(2*b);
-        return circut;
     }
-    public void WriteOutR(){
-        System.out.println("----------RECTANGLE----------\nfield: " + area + " circut: " + circut);
+    public void WriteOut_rec(){
+        System.out.println("field: " + area + " circut: " + circut +"\n");
     }
 }
