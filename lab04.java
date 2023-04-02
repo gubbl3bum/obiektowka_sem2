@@ -104,9 +104,7 @@ zapisanymi od końca do początku. Dla przykładu, dla podanych słów "Ala", "m
 posortuje tą tablicę rosnąco i wypisze wynik sortowania na ekran. Dla przykładu, dla liczb 10,
 -2, 1, 100, 20, -15, 0, 10, program wypisze -15, -2, 0, 1, 10, 10, 20, 100. Zastanów się, jak można
 posortować ciąg liczb i spróbuj zaimplementować swoje rozwiązanie. Przetestuj je na różnych
-zestawach danych. Możesz też skorzystać z jednego z popularnych algorytmów sortowania, np.
-sortowania przez wstawianie. Działanie algorytmu omówiono szczegółowo na zajęciach
-algorytmy i struktury danych.*/
+zestawach danych.*/
     public static void sortNum(){
         System.out.println("\n\n---------- EXERCISE 5 ----------\n");
         final int arrLen = 8;
