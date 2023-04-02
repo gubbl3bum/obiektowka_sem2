@@ -2,10 +2,10 @@ import java.util.Random;
 import java.util.Scanner;
 public class lab03{
     public static void main(String[] args) {
-        //points();
-        //sumNeg();
-        //sequence();
-       // palin();
+        points();
+        sumNeg();
+        sequence();
+        palin();
         randSum();
     }
     public static int inputInt() {
