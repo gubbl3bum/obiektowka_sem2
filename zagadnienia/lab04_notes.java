@@ -1,3 +1,5 @@
+package zagadnienia;
+
 import java.util.Arrays;
 public class lab04_notes {
     public static void main(String[] args) {

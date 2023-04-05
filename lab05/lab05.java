@@ -164,10 +164,14 @@ metody.*/
         spec1.setDescr("Only domesticated species in the family Felidae and is commonly reffered to as domestic cat or house cat to distinguish it from the wild members of the family");
         spec1.setChromosome_2n(19);
         spec1.setBasic_chrom_x(1);
-        spec1.WriteOut_chrom();
         spec1.WriteOut_name();
+        spec1.WriteOut_chrom();
         spec1.WriteOut_full();
         Species spec1_copy = spec1.copy();
+
+        spec1_copy.WriteOut_name();
+        spec1_copy.WriteOut_chrom();
+        spec1_copy.WriteOut_full();
 
         Species spec2 = new Species();
         spec2.setName("Dog");
@@ -183,7 +187,6 @@ metody.*/
         spec2_copy.WriteOut_name();
         spec2_copy.WriteOut_chrom();
         spec2_copy.WriteOut_full();
-
 
         Species spec3 = new Species();
         spec3.setName("Rabbit");

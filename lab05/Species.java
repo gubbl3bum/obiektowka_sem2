@@ -17,7 +17,7 @@ public class Species {
     }
     public void WriteOut_chrom(){
         System.out.println("----------HAPLOID NUMBER----------\n----------OF CHROMOSOMES----------\n" +
-                "haploid number of chromosomes: " + 2*chromosome_2n + "\n");
+                "haploid number of chromosomes: " + (2*chromosome_2n) + "\n");
     }
     public Species copy(){ // kopia 1:1 obiektu
         Species copy = new Species();

@@ -1,4 +1,4 @@
-package zagadnienia_lab05;
+package zagadnienia;
 public class zagad05 {
     public static void main(String[] args) {
 //        person obj = new person();

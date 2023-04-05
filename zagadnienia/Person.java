@@ -1,4 +1,4 @@
-package zagadnienia_lab05;
+package zagadnienia;
 public class Person {
     // definicja pól
     // pole prywatne klasy - dostęp tylko i wyłącznie w tej klasie
