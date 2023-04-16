@@ -1,26 +1,12 @@
 package lab06;
-
-public class Trojkat {
+public class Trojkat{
     double wys, podst;
-
-    public Trojkat() {
+    Trojkat(){
         this.wys = 0;
         this.podst = 0;
     }
-
-    public double getWys() {
-        return wys;
-    }
-
-    public void setWys(double wys) {
-        this.wys = wys;
-    }
-
-    public double getPodst() {
-        return podst;
-    }
-
-    public void setPodst(double podst) {
-        this.podst = podst;
+    public Trojkat(double x, double y){
+        this.wys = x;
+        this.podst = y;
     }
 }

@@ -4,6 +4,7 @@ public class lab06 {
         ex1();
     }
     public static void ex1(){
+        System.out.println("---------- EXERCISE 1 ----------");
         /*Zadanie 1
 Utwórz projekt zawierający funkcje Main.
 Utwórz klasę Punkt, która zawiera publiczne pola (współrzędne): x oraz y.
@@ -17,11 +18,13 @@ Do pakietu pliki Figury, Prostokąt i Trojkat (udostępnione przez prowadzącego
 Utworzyć obiekty typu Figura, Prostokat i Trojkat. Sprawdzić działanie wybranych metod dla
 utworzonych obiektów.
 Zaprojektować klasę Okrag zawierającą pola: środek klasy Punkt – środek okręgu, promień typu double
-oraz metody: getPowierzchnia() zwracająca pole powierzchni, getSrednica() zwracająca średnice, setPromien(double p) ustawiająca nowy promień, getPromien() zwracająca promień, wSrodku(Punkt) sprawdzająca czy dany punkt znajduje się wewnątrz okręgu.
+oraz metody: getPowierzchnia() zwracająca pole powierzchni, getSrednica() zwracająca średnice, setPromien(double p)
+ustawiająca nowy promień, getPromien() zwracająca promień, wSrodku(Punkt) sprawdzająca czy dany punkt znajduje się wewnątrz okręgu.
 Konstruktory: -> Pusty – inicjujący pola wartościami domyślnymi punkt (0,0), promień 0,
 -> Określający punkt oraz promień
 Zmodyfikować klasę Prostokat i Trojkat, tak, aby dziedziczyły z klasy Figura.
-Dodać konstruktor przeciążony dla klasy Prostokat postaci: Prostokat(float wys,float szer, String kolor). Wewnątrz konstruktora powinien być wywołany konstruktor z klasy bazowej.
+Dodać konstruktor przeciążony dla klasy Prostokat postaci: Prostokat(float wys,float szer, String kolor). Wewnątrz
+konstruktora powinien być wywołany konstruktor z klasy bazowej.
 Dodać konstruktor przeciążony dla klasy Trojkat postaci Trojkat(float wys,float podst,String kolor).
 Dodać metodę przesuwającą prostokąt o dane współrzędne void przesun(float x, float y).
 Dla obiektu typu Prostokat wywołać metodę przesun(3,5).
@@ -30,16 +33,23 @@ Utworzyć dowolny obiekt typu Kwadrat i nadać mu dowolną wartość początkow�
 Przysłonić metody opis() we wszystkich klasach.
 Dla utworzonych obiektów wywołać metodę opis(), w taki sposób, aby opis o danym obiekcie został
 wyświetlony na konsolę.
-Zmodyfikować klasę Okrag zawierającą, tak, aby dziedziczyła po klasie Figura. Sprawdzić działanie zdefiniowanych metod dla przykładowych obiektów.*/
+Zmodyfikować klasę Okrag zawierającą, tak, aby dziedziczyła po klasie Figura. Sprawdzić działanie zdefiniowanych metod
+dla przykładowych obiektów.*/
         Point punkt1 = new Point(1.5, 29.0);
         Point punkt2 = new Point(25.1, 69.1);
         Point punkt3 = new Point(25.01, 29.07);
-
+        /*użycie metod z Pointu*/
         punkt1.opis();
         punkt1.przesun(2.5,16);
         punkt1.opis();
+        punkt2.zeruj();
+        punkt2.opis();
+        punkt3.przesun(15.1, 69);
+        punkt3.opis();
+
 
         Figura figura = new Figura();
+        System.out.println(figura.opis());
         Prostokat prostokat = new Prostokat();
         Trojkat trojkat = new Trojkat();
     }
