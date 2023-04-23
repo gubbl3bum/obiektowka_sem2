@@ -47,7 +47,6 @@ dla przykładowych obiektów.*/
         punkt3.przesun(15.1, 69);
         punkt3.opis();
 
-
         Figura figura = new Figura();
         System.out.println(figura.opis());
         Prostokat prostokat = new Prostokat();
@@ -64,6 +63,8 @@ sposób, by wartości pól były parametrami metody. W klasie Samochod utwórz t
 wyświetli informacje o samochodzie. Przesłoń ją w klasie SamochodOsobowy. W metodzie Main()
 utwórz obiekt klasy SamochodOsobowy oraz dwa obiekty klasy Samochod (wykorzystując różne
 konstruktory). Wyświetl informacje o samochodach. */
+
+
     /*Należy zaimplementować aplikację wykorzystującą: kompozycję i dziedziczenie, rzutowanie oraz
 operator this i metodę super dla następujących klas Księgarnia, Podręcznik, Powieść, Klient, Książk*/
 
